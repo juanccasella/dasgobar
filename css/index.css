@@ -1,11 +1,13 @@
-@charset "UTF-8";
 .navbar {
-  padding: 10px 5%;
+  padding: 8px 10%;
   background-color: rgba(0, 125, 138, 0.79) !important;
   width: 100%;
+  font-size: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 .navbar .site_logo {
-  max-height: 45px;
+  max-height: 35px;
 }
 .navbar .collapse {
   justify-content: end;
@@ -13,25 +15,45 @@
 .navbar .collapse .navbar-nav {
   margin: 0 !important;
 }
-
-
-/*Pasar a sass:  sass --watch scss:css*/
-
-.nav-item{
-  margin: 10px 0;
-  padding: 0 10px; /* Espacio entre el borde y el contenido */
+.navbar .nav-item {
+  padding: 10px;
 }
-
-.nav-link{
+.navbar .nav-item .nav-link {
+  color: white;
   padding: 0 !important;
 }
-
-.navbar .nav-item:not(:first-child){
-  border-left: 1px solid #ffffff;
+.navbar .nav-item .dropdown-menu {
+  display: block;
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.9s ease, transform 0.8s ease;
+  visibility: hidden;
 }
-
-.navbar .nav-item:last-child{
+.navbar .nav-item .dropdown-menu .dropdown-item {
+  font-size: 8px;
+  font-weight: 400;
+  padding: 12px;
+}
+.navbar .nav-item .dropdown-menu .dropdown-divider {
+  margin: 0;
+}
+.navbar .nav-item:not(:first-child) {
+  border-left: 0.5px solid rgba(255, 255, 255, 0.5);
+  padding-left: 10px;
+}
+.navbar .nav-item:last-child {
   padding-right: 0;
 }
+.navbar .nav-item:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/*Pasar a sass:  sass --watch scss:css*/
 
 /*# sourceMappingURL=index.css.map */

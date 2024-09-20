@@ -1,11 +1,14 @@
 .navbar{
-    padding: 10px 5%;
+    padding: 8px 10%;
     background-color: rgba(0, 125, 138, 0.79) !important;
     width: 100%;
+    font-size: 8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 
     
     .site_logo{
-        max-height: 45px
+        max-height: 35px
     }
 
     .collapse{
@@ -15,9 +18,49 @@
         }
     }
 
+    .nav-item{
+        padding: 10px;
+        .nav-link{
+            color: white;
+            padding: 0 !important;
+        }
+        .dropdown-menu{
+            display: block;
+            margin-top: 10px;
+            overflow: hidden;
+            padding: 0;
+            opacity: 0;
+            transform: translateY(-10px);  // Menor desplazamiento para una animación más sutil
+            transition: opacity 0.9s ease, transform 0.8s ease; // Transición solo para estas propiedades
+            visibility: hidden; // Inicialmente oculto
+            .dropdown-item{
+                font-size: 8px;
+                font-weight: 400;
+                padding: 12px;
+            }
+            .dropdown-divider{
+                margin: 0;
+            }
+        }
+    }
+
     .nav-item:not(:first-child) {
-        border-left: 1px solid #ffffff; /* Color y tamaño del borde */
-        padding-left: 10px; /* Espacio entre el borde y el contenido */
+        border-left: 0.5px solid rgba(255, 255, 255, 0.50);
+        padding-left: 10px;
+    }
+
+    .nav-item:last-child{
+        padding-right: 0;
+    }
+
+    .nav-item:hover .dropdown-menu{
+        display: block;
+        opacity: 1; // Hacer visible
+        transform: translateY(0); // Volver a la posición original
+        visibility: visible;
     }
 }
 
+
+
+/*Pasar a sass:  sass --watch scss:css*/

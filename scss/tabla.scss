@@ -1,35 +1,101 @@
-.table-container{
-    margin: 40px 10%;
-    max-width: 80%;
-    max-height: 500px;
-    overflow-y: auto;
-}
-.table{
+body{
     font-family: "Roboto", sans-serif;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-    thead{
-        position: sticky !important;
-        .table-header th{
-            vertical-align: middle;
-            text-align: center;
-            background-color: #009B81;
-            color: white;
-            font-weight: 500;
-        }
-    }    
-    tbody{
-        th, td{
-            vertical-align: middle;
-            text-align: center;
-            font-weight: 300;
-            a{
-                text-decoration: none;
+    section{
+        .table-headder{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 40px 10%;
+            border-radius: 8px;
+            background-color: #007D8A;
+            align-items: center;
+            .headder-search{
+                width: 80%;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .headder-text{
+                    margin: 0;
+                    color: white;
+                    font-weight: 500;
+                    font-size: 30PX;
+                    max-width: 500px ;
+                }
+                .d-flex{
+                    width: 500px;
+                    background-color: white;
+                    border-radius: 8px;
+                    .form-floating{
+                        width: 90%;
+                    }
+                    .btn{
+                        margin: 0;
+                        width: 10%;
+                        height: auto;
+                    }
+                }
             }
         }
+        .table-container{
+            margin: 40px 10%;
+            max-width: 80%;
+            max-height: 520px;
+            overflow-y: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.1);
+            .table{
+                overflow: hidden;
+                thead{
+                    position: sticky !important;
+                    .table-header th{
+                        vertical-align: middle;
+                        text-align: center;
+                        background-color: #009B81;
+                        color: white;
+                        font-weight: 500;
+                    }
+                }    
+                tbody{
+                    th, td{
+                        vertical-align: middle;
+                        text-align: center;
+                        font-weight: 300;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .apertura{
+                    white-space: nowrap !important;
+                }
+            }
+        }
+        
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
+        
     }
-    .apertura{
-        white-space: nowrap !important;
+    .btn-res{
+        width: 50%;
+        margin: 10px 25%;
+        color: white;
+        background-color: #007D8A;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    .btn-res:hover{
+        background-color: #009B81;
+        color: white;
     }
 }
+

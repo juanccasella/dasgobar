@@ -1,36 +1,94 @@
-.table-container {
+body {
+  font-family: "Roboto", sans-serif;
+}
+body section .table-headder {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 10%;
+  border-radius: 8px;
+  background-color: #007D8A;
+  align-items: center;
+}
+body section .table-headder .headder-search {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body section .table-headder .headder-search .headder-text {
+  margin: 0;
+  color: white;
+  font-weight: 500;
+  font-size: 30PX;
+  max-width: 500px;
+}
+body section .table-headder .headder-search .d-flex {
+  width: 500px;
+  background-color: white;
+  border-radius: 8px;
+}
+body section .table-headder .headder-search .d-flex .form-floating {
+  width: 90%;
+}
+body section .table-headder .headder-search .d-flex .btn {
+  margin: 0;
+  width: 10%;
+  height: auto;
+}
+body section .table-container {
   margin: 40px 10%;
   max-width: 80%;
-  max-height: 500px;
+  max-height: 520px;
   overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
-
-.table {
-  font-family: "Roboto", sans-serif;
-  border-radius: 8px;
+body section .table-container .table {
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
-.table thead {
+body section .table-container .table thead {
   position: sticky !important;
 }
-.table thead .table-header th {
+body section .table-container .table thead .table-header th {
   vertical-align: middle;
   text-align: center;
   background-color: #009B81;
   color: white;
   font-weight: 500;
 }
-.table tbody th, .table tbody td {
+body section .table-container .table tbody th, body section .table-container .table tbody td {
   vertical-align: middle;
   text-align: center;
   font-weight: 300;
 }
-.table tbody th a, .table tbody td a {
+body section .table-container .table tbody th a, body section .table-container .table tbody td a {
   text-decoration: none;
 }
-.table .apertura {
+body section .table-container .table .apertura {
   white-space: nowrap !important;
+}
+body section ::-webkit-scrollbar {
+  width: 10px;
+}
+body section ::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+body section ::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+body .btn-res {
+  width: 50%;
+  margin: 10px 25%;
+  color: white;
+  background-color: #007D8A;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+body .btn-res:hover {
+  background-color: #009B81;
+  color: white;
 }
 
 /*# sourceMappingURL=tabla.css.map */

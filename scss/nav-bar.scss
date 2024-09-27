@@ -1,0 +1,66 @@
+.navbar{
+    padding: 0 10%;
+    background-color: rgba(0, 125, 138, 0.79) !important;
+    width: 100%;
+    font-size: 12px;
+    position: fixed;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    z-index: 2;
+    .container-fluid{
+        padding: 0 !important;
+        .site_logo{
+            padding: 5px 0;
+            max-height: 55px
+        }
+        .collapse{
+            justify-content: end;
+            .navbar-nav{
+                margin: 0 !important;
+            }
+        }
+        .nav-item{
+            padding: 20px 10px;
+            cursor: pointer;
+            .nav-link {
+                color: white;
+                padding: 0 0 0 10px !important;
+                border-left: 0.5px solid rgba(255, 255, 255, 0.50) !important;
+            }
+            .dropdown-menu{
+                display: block;
+                overflow: hidden;
+                margin-top: 19px;
+                padding: 0;
+                opacity: 0;
+                transform: translateY(-10px);
+                transition: opacity 0.9s ease, transform 0.8s ease;
+                visibility: hidden;
+                .dropdown-item{
+                    font-size: 12px;
+                    font-weight: 400;
+                    padding: 12px;
+                }
+                .dropdown-divider{
+                    margin: 0;
+                }
+            }
+        }
+        .nav-item:first-child .nav-link {
+            border-left: none !important;
+        }
+        .nav-item:last-child{
+            padding-right: 0;
+        }
+        .nav-item:hover .dropdown-menu{
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+        }
+    }
+}
+
+/*sass --watch scss:css*/
+// Revisar responsive
+// Animacion para el dropdown

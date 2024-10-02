@@ -1,0 +1,37 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.breadcrumb{
+    margin: 0;
+    .breadcrumb-item{
+        color: white;
+    }
+    .breadcrumb-item::before{
+        color: white;
+    }
+}
+
+.header-text{
+    width: 350px ;
+}
+
+.btn-serch{
+    color: #666363;
+    font-weight: 450;
+}
+.btn-serch:hover{
+    color: white;
+    background-color: #007D8A;
+    border-color: #007D8A;
+}
+
+
+.btn-modal{
+    color: white;
+    background-color: #009B81;
+}
+.btn-modal:hover{
+    color: white;
+    background-color: #007D8A;
+} 

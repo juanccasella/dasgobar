@@ -11,6 +11,7 @@ body section .card {
 body section .card .card-header {
   background-color: #009B81;
   border: 0;
+  padding: 0;
 }
 body section .card .card-header .table-header {
   display: flex;
@@ -19,41 +20,46 @@ body section .card .card-header .table-header {
   align-items: center;
   width: 100%;
 }
-body section .card .card-header .table-header .headder-search {
-  width: 80%;
-  padding: 20px;
+body section .card .card-header .table-header .header-search {
+  width: 100%;
+  padding: 20px 5%;
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   align-items: center;
 }
-body section .card .card-header .table-header .headder-search .headder-text {
+body section .card .card-header .table-header .header-search .header-text {
   margin: 0;
   color: white;
   font-weight: 500;
-  font-size: 30PX;
+  font-size: 25PX;
   max-width: 500px;
 }
-body section .card .card-header .table-header .headder-search .d-flex {
+body section .card .card-header .table-header .header-search .d-flex {
   width: 500px;
   background-color: white;
   border-radius: 8px;
 }
-body section .card .card-header .table-header .headder-search .d-flex .form-floating {
+body section .card .card-header .table-header .header-search .d-flex .form-floating {
   width: 90%;
 }
-body section .card .card-header .table-header .headder-search .d-flex .form-floating .form-control {
+body section .card .card-header .table-header .header-search .d-flex .form-floating .form-control {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  min-height: 50px;
+}
+body section .card .card-header .table-header .header-search .d-flex .form-floating label {
+  color: #636466;
 }
 body section .card .card-body {
   padding: 0;
-  margin: 30px 15px 0 15px;
+  margin: 15px 5% 0 5%;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
   overflow: hidden;
 }
 body section .card .card-body .table-responsive {
-  height: 520px;
+  height: 500px;
 }
 body section .card .card-body .table-responsive .table {
   width: 100%;
@@ -81,6 +87,7 @@ body section .card .card-body .table-responsive .table tbody th, body section .c
   vertical-align: middle;
   text-align: center;
   font-weight: 300;
+  color: #636466;
 }
 body section .card .card-body .table-responsive .table tbody th a, body section .card .card-body .table-responsive .table tbody td a {
   text-decoration: none;
@@ -89,9 +96,7 @@ body section .card .card-body .table-responsive .table .apertura {
   white-space: nowrap !important;
 }
 body section .card .card-footer {
-  margin: 0px 15px 15px 15px;
-  background-color: #007D8A;
-  padding: 10px;
+  padding: 20px;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
 }
@@ -100,12 +105,13 @@ body section .card .card-footer .pagination {
   margin: 0;
 }
 body section .card .card-footer .pagination .page-item.active .page-link {
-  background-color: #007D8A;
-  border-color: #007D8A;
+  background-color: #009B81;
+  border-color: #009B81;
   color: white;
 }
 body section .card .card-footer .pagination a {
-  color: #007D8A;
+  color: #009B81;
+  margin-top: 15px;
 }
 body section .btn-res {
   width: 50%;
@@ -130,4 +136,4 @@ body section ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
-/*# sourceMappingURL=tabla.css.map */
+/*# sourceMappingURL=table.css.map */

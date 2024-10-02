@@ -10,23 +10,25 @@ body{
             .card-header{
                 background-color: #009B81;
                 border: 0;
+                padding: 0;
                 .table-header{
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
                     align-items: center;
                     width: 100%;
-                    .headder-search{
-                        width: 80%;
-                        padding: 20px;
+                    .header-search{
+                        width: 100%;
+                        padding: 20px 5%;
                         display: flex;
                         justify-content: space-between;
+                        gap: 30px;
                         align-items: center;
-                        .headder-text{
+                        .header-text{
                             margin: 0;
                             color: white;
                             font-weight: 500;
-                            font-size: 30PX;
+                            font-size: 25PX;
                             max-width: 500px ;
                         }
                         .d-flex{
@@ -38,6 +40,10 @@ body{
                                 .form-control{
                                     border-top-right-radius: 0;
                                     border-bottom-right-radius: 0;
+                                    min-height: 50px;
+                                }
+                                label{
+                                    color: #636466;
                                 }
                             }
                         }
@@ -46,12 +52,12 @@ body{
             }
             .card-body{
                 padding: 0;
-                margin: 30px 15px 0 15px;
+                margin: 15px 5% 0 5%;
                 border-top-right-radius: 6px;
                 border-top-left-radius: 6px;
                 overflow: hidden;
                 .table-responsive{
-                    height: 520px;
+                    height: 500px;
                     .table{
                         width: 100%;
                         border-collapse: collapse;
@@ -78,6 +84,7 @@ body{
                                 vertical-align: middle;
                                 text-align: center;
                                 font-weight: 300;
+                                color: #636466;
                                 a{
                                     text-decoration: none;
                                 }
@@ -90,21 +97,21 @@ body{
                 }
             }
             .card-footer{
-                margin: 0px 15px 15px 15px;
-                background-color: #007D8A;
-                padding: 10px;
+                // background-color: #009B81;
+                padding: 20px;
                 border-bottom-right-radius: 6px;
                 border-bottom-left-radius: 6px;
                 .pagination{
                     justify-content: center;
                     margin: 0;
                     .page-item.active .page-link {
-                        background-color: #007D8A;
-                        border-color: #007D8A; 
+                        background-color: #009B81;
+                        border-color: #009B81; 
                         color: white;            
                     }
                 a{
-                        color: #007D8A;
+                        color: #009B81;
+                        margin-top: 15px;
                     }
                 }
             }

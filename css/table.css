@@ -96,6 +96,7 @@ body section .card .card-body .table-responsive .table .apertura {
   white-space: nowrap !important;
 }
 body section .card .card-footer {
+  background-color: white !important;
   padding: 20px;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;

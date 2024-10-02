@@ -61,31 +61,6 @@
   visibility: visible;
 }
 
-.footer-casas {
-  padding: 30px 25%;
-}
-
-.footer-container {
-  opacity: 0.6;
-  padding: 20px 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer-container .footer-texto {
-  text-align: center;
-  color: rgb(0, 0, 0);
-}
-.footer-container .footer-texto h4 {
-  font-size: 12px;
-}
-.footer-container .footer-redes i {
-  color: rgb(0, 0, 0);
-}
-.footer-container .footer-redes i:hover {
-  transform: scale(1.1);
-}
-
 /*Pasar a sass:  sass --watch scss:css*/
 
 /*# sourceMappingURL=index.css.map */

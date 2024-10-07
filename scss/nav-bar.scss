@@ -1,9 +1,10 @@
 .navbar{
     padding: 0 10%;
-    background-color: rgba(0, 125, 138, 0.79) !important;
+    background-color: #007D8A !important;
     width: 100%;
     font-size: 12px;
     position: fixed;
+    top: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     z-index: 2;
@@ -62,5 +63,3 @@
 }
 
 /*sass --watch scss:css*/
-// Revisar responsive
-// Animacion para el dropdown

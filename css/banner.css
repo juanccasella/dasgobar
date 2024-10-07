@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   height: 400px;
+  margin-top: 65px;
 }
 .banner .banner-image {
   width: 100%;

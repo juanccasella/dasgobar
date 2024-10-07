@@ -1,0 +1,74 @@
+.navbar{
+    padding: 10px 10%;
+    width: 100%;
+    font-size: 15px;
+    position: fixed;
+    top: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    z-index: 2;
+    .container-fluid{
+        padding: 0 !important;
+        .logo{
+            padding: 5px 0;
+            height: 65px;
+            fill: #007D8A;
+            transition: fill 0.3s;
+        }
+        .logo:hover {
+            fill: #009B81;
+        }
+        .collapse{
+            justify-content: end;
+            .navbar-nav{
+                margin: 0 !important;
+            }
+        }
+        .nav-item{
+            padding: 0 8px;
+            // display: flex;
+            // align-items: center;
+            // align-items: end;
+            .nav-link {
+                color: #007D8A;
+                margin: 0 0 0 10px !important;
+                transition: color 0.3s;
+            }
+            .nav-link:hover{
+                color: #009B81;   
+            }
+            .dropdown-menu{
+                overflow: hidden;
+                .dropdown-item{
+                    color: #007D8A;
+                    font-size: 15px;
+                    font-weight: 400;
+                    padding: 12px;
+                }
+                .dropdown-item:hover{
+                    color:#009B81;
+                    background-color: transparent !important;
+                }
+                .dropdown-divider{
+                    margin: 0;
+                }
+            }
+
+        }
+        .nav-item-redes{
+            display: flex;
+            align-items: center;
+            margin: 0 !important;
+            .nav-link-redes{
+                padding: 0;
+                margin: 0 !important;
+                font-size: 20px;
+            }
+        }
+        .nav-item:last-child{
+            padding-right: 0;
+        }
+    }
+}
+
+/*sass --watch scss:css*/

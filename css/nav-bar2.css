@@ -1,0 +1,72 @@
+.navbar {
+  padding: 10px 10%;
+  width: 100%;
+  font-size: 15px;
+  position: fixed;
+  top: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  z-index: 2;
+}
+.navbar .container-fluid {
+  padding: 0 !important;
+}
+.navbar .container-fluid .logo {
+  padding: 5px 0;
+  height: 65px;
+  fill: #007D8A;
+  transition: fill 0.3s;
+}
+.navbar .container-fluid .logo:hover {
+  fill: #009B81;
+}
+.navbar .container-fluid .collapse {
+  justify-content: end;
+}
+.navbar .container-fluid .collapse .navbar-nav {
+  margin: 0 !important;
+}
+.navbar .container-fluid .nav-item {
+  padding: 0 8px;
+}
+.navbar .container-fluid .nav-item .nav-link {
+  color: #007D8A;
+  margin: 0 0 0 10px !important;
+  transition: color 0.3s;
+}
+.navbar .container-fluid .nav-item .nav-link:hover {
+  color: #009B81;
+}
+.navbar .container-fluid .nav-item .dropdown-menu {
+  overflow: hidden;
+}
+.navbar .container-fluid .nav-item .dropdown-menu .dropdown-item {
+  color: #007D8A;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 12px;
+}
+.navbar .container-fluid .nav-item .dropdown-menu .dropdown-item:hover {
+  color: #009B81;
+  background-color: transparent !important;
+}
+.navbar .container-fluid .nav-item .dropdown-menu .dropdown-divider {
+  margin: 0;
+}
+.navbar .container-fluid .nav-item-redes {
+  display: flex;
+  align-items: center;
+  margin: 0 !important;
+}
+.navbar .container-fluid .nav-item-redes .nav-link-redes {
+  padding: 0;
+  margin: 0 !important;
+  font-size: 20px;
+}
+.navbar .container-fluid .nav-item:last-child {
+  padding-right: 0;
+}
+
+/*sass --watch scss:css*/
+
+/*# sourceMappingURL=nav-bar2.css.map */
